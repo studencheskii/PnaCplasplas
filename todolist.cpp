@@ -9,64 +9,7 @@ using namespace std;
 int month[] = {31,28,31,30,31,30,31,31,30,31,30,31};
 int current_month = 0;
 vector<vector<string>> todolist(31);
-/*
-inline bool space(char c)
-{
-	return isspace(c);
-}
 
-inline bool notspace(char c)
-{
-	return !isspace(c);
-}
-
-vector<string> split(const string &str)
-{
-
-	int i = 0;
-	vector<string> vstr;
-	string word;
-
-	while(isspace(str[i])) i++;
-
-	for(; i < str.length(); i++)
-	{
-		if(str[i] != ' ')
-		{
-			word += str[i];
-		}
-		else
-		{
-			if(word)
-			{
-				vstr.push_back(word);
-				word.clear();
-			}
-		}
-	}
-	if(word)
-	{
-		vstr.push_back(word);
-		word.clear();
-	}
-	return vstr;
-
-	typedef std::string::const_iterator iter;
-	vector<string> ret;
-	iter i = str.begin();
-	while(i != str.end())
-	{
-		i = std::find_if(i, str.end(), notspace);
-		iter j = std::find_if(i, str.end(), space);
-		if(i != str.end())
-		{
-			ret.push_back(string(i,j));
-			i = j;
-		}
-	}
-	return ret;
-*/
-}
 
 void add(int i, const string &s)
 {
